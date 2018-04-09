@@ -1,0 +1,71 @@
+.card-post {
+    box-shadow: 0 1px 2px rgba(0,0,0,.08);
+    margin: auto;
+}
+
+.uk-card-body {
+    padding: 16px;
+}
+
+.uk-card-body h4 {
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.uk-card-body .card-title {
+    height: 72px;
+    overflow: hidden;
+}
+
+.uk-card-body .card-excerpt {
+    margin-top: -16px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.card-footer {
+    margin-top: 8px;
+}
+
+.card-footer-name {
+    display: block;
+    font-weight: 600;
+}
+
+.card-footer-username {
+    font-size: 14px;
+}
+
+.card-footer-date {
+    font-size: 14px;
+}
+
+.card-footer-image{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 8px;
+}
+
+.uk-card-body .card-footer-image img {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card-footer .card-dropdown {
+    padding: 0;
+}
+
+.card-footer .card-dropdown li {
+    padding: 8px 16px;
+}
+
+.card-footer .card-dropdown li:hover {
+    background-color: #D8E1E8;
+}
+
+.card-actions a {
+    padding: 8px;
+}
+

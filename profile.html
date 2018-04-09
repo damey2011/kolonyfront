@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="uikit/css/uikit.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/card-styles.css">
+    <link rel="stylesheet" href="css/follow-card-styles.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <script src="uikit/js/uikit.min.js"></script>
+    <script src="uikit/js/uikit-icons.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Navbar -->
+<div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container uk-margin navbar" uk-navbar="dropbar: true;">
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle" href="#side-menu" uk-toggle="target: #side-menu">
+                <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+            </a>
+        </div>
+
+        <div class="uk-navbar-center">
+            <div class="uk-navbar-center-left uk-visible@m">
+                <div>
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Option 1</a></li>
+                        <li>
+                            <a href="#">Dropdown</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+
+
+
+            <div class="uk-navbar-center-right uk-visible@m">
+                <div>
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-navbar-right">
+            <div uk-spinner> </div> <span>Loading...</span>
+            <a class="uk-navbar-toggle" href="#modal-full" uk-search-icon uk-toggle></a>
+        </div>
+    </nav>
+
+    <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <form class="uk-search uk-search-large">
+                <input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!--End of nav bar-->
+
+<section class="profile-cover-section">
+    <div class="uk-background-image uk-background-cover uk-background-muted uk-height-small" style="background-image: url(./images/1-P6Be-8fu-yjmGgFe4rqNIg.jpeg)" uk-parallax="bgy: -200">
+        <!--<img src="images/1-m3vlxneAo50hBQYOZbT_ug.jpeg" alt="Cover Image Profile">-->
+    </div>
+</section>
+
+<section>
+    <div class="uk-container">
+        <div class="uk-container-large" uk-grid>
+            <div class="uk-width-1-1@s uk-width-3-4@m uk-position-relative">
+                <div class="profile-actions uk-float-left">
+                    <div class="user-profile-image uk-position-relative uk-border-circle uk-overflow-hidden uk-text-center uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                        <img src="images/user1.jpg" alt="User profile image">
+                        <div class="uk-position-center js-upload" uk-form-custom>
+                            <input type="file">
+                            <a href="#"><span class="uk-transition-fade color-white" uk-icon="icon: pencil; ratio: 2"></span></a>
+                        </div>
+                    </div>
+                    <div class="uk-text-center uk-margin-small-top">
+                        <a href="#" class="uk-icon-button uk-padding-small box-sizing-content edit-profile-button" uk-icon="icon: pencil; ratio: 3"></a>
+                    </div>
+                    <div class="uk-text-center uk-margin-small-top">
+                        <a href="#" class="uk-icon-button uk-padding-small box-sizing-content message-profile-button" uk-icon="icon: mail; ratio: 1.5"></a>
+                    </div>
+                </div>
+
+                <div class="uk-float-left uk-padding-small">
+                    <div class="uk-h2 uk-text-bold uk-margin-remove-bottom">First Name Last</div>
+                    <span class="uk-display-block uk-h3 uk-margin-remove" style="color: #999;">@username</span>
+                    <span class="uk-display-block uk-h5 uk-margin-small"> <span uk-icon="users"></span> 4.8m Followers</span>
+                    <a href="#"><span uk-icon="link"></span> https://personal.mywebpage.com</a>
+                    <div class="social-buttons uk-margin-small-top uk-position-bottom-right">
+                        <a href="#" class="uk-icon-button"><span uk-icon="facebook"></span></a>
+                        <a href="#" class="uk-icon-button"><span uk-icon="twitter"></span></a>
+                        <a href="#" class="uk-icon-button"><span uk-icon="instagram"></span></a>
+                    </div>
+
+                    <button class="uk-button-small uk-button-default uk-position-top-right uk-margin-medium-top"> <span uk-icon="plus"></span> FOLLOW</button>
+
+                </div>
+            </div>
+
+            <div class="uk-width-1-1@s uk-width-1-4@m">
+                <h2 class="uk-h2 uk-heading-line uk-margin-small-top">About </h2>
+                <div>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

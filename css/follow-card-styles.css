@@ -1,0 +1,23 @@
+.feed-user-card-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 4px;
+}
+
+.feed-user-card {
+    padding: 16px 8px;
+}
+
+.feed-user-card-image img {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.feed-user-card-details div{
+    font-weight: 600;
+}
+
+.feed-user-card-details span {
+    font-size: 13px;
+}
