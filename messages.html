@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Post</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="uikit/css/uikit.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/card-styles.css">
+    <link rel="stylesheet" href="css/follow-card-styles.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <script src="uikit/js/uikit.min.js"></script>
+    <script src="uikit/js/uikit-icons.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Navbar -->
+<div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container uk-margin navbar" uk-navbar="dropbar: true;">
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle" href="#side-menu" uk-toggle="target: #side-menu">
+                <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+            </a>
+        </div>
+
+        <div class="uk-navbar-center">
+            <div class="uk-navbar-center-left uk-visible@m">
+                <div>
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Option 1</a></li>
+                        <li>
+                            <a href="#">Dropdown</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+
+
+
+            <div class="uk-navbar-center-right uk-visible@m">
+                <div>
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-navbar-right">
+            <div uk-spinner> </div> <span>Loading...</span>
+            <a class="uk-navbar-toggle" href="#modal-full" uk-search-icon uk-toggle></a>
+        </div>
+    </nav>
+
+    <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <form class="uk-search uk-search-large">
+                <input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!--End of nav bar-->
+
+<section>
+    <div class="uk-container">
+        <h3 class="uk-h3 uk-margin post-title uk-margin-remove-bottom">Your Conversations</h3>
+        <input type="text" class=" uk-margin-small-top uk-margin-bottom uk-search-icon-flip uk-search uk-search-default uk-input uk-search-input uk-search-icon" placeholder="Search Messages"/>
+
+        <div class="uk-container-large uk-height-max-large uk-grid-match uk-grid-divider uk-overflow-auto" uk-grid>
+
+            <div class="uk-width-1-1@s uk-width-1-4@m uk-position-relative" id="post-column">
+                <ul class="uk-list uk-card">
+                    <li class="uk-position-relative">
+                        <a href="#" class="uk-display-block message-thread-link">
+                            <div class="message-thread-image uk-float-left uk-position-relative uk-border-circle uk-overflow-hidden">
+                                <img src="images/user1.jpg" alt="" class="uk-position-absolute">
+                            </div>
+                            <div class="uk-float-left uk-margin-small-left">
+                                <h5 class="uk-margin-remove uk-text-bold">Convo Name</h5>
+                                <span class="uk-text-muted">Last Message Goes here</span>
+                            </div>
+                            <div class="uk-position-top-right uk-comment-meta">
+                                3 days ago
+                            </div>
+                        </a>
+                    </li>
+                    <li class="uk-position-relative">
+                        <a href="#" class="uk-display-block message-thread-link">
+                            <div class="message-thread-image uk-float-left uk-position-relative uk-border-circle uk-overflow-hidden">
+                                <img src="images/user1.jpg" alt="" class="uk-position-absolute">
+                            </div>
+                            <div class="uk-float-left uk-margin-small-left">
+                                <h5 class="uk-margin-remove uk-text-bold">Convo Name</h5>
+                                <span class="uk-text-muted">Last Message Goes here</span>
+                            </div>
+                            <div class="uk-position-top-right uk-comment-meta">
+                                3 days ago
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="uk-width-1-1@s uk-width-3-4@m uk-position-relative">
+                <!--<div class="uk-display-block uk-position-absolute uk-background-muted conversation-header uk-padding-small uk-sticky" uk-sticky>-->
+                    <!--<div class="message-thread-image uk-float-left uk-position-relative uk-border-circle uk-overflow-hidden">-->
+                        <!--<img src="images/user1.jpg" alt="" class="uk-position-absolute">-->
+                    <!--</div>-->
+                    <!--<div class="uk-margin-small-left uk-float-left">-->
+                        <!--<h4 class="uk-margin-remove uk-text-bold">Conv Name</h4>-->
+                    <!--</div>-->
+                    <!--<div class="uk-position-center-right uk-margin-small-right">-->
+                        <!--<a href="#"><span class="uk-icon-button" uk-icon="more"></span></a>-->
+                        <!--<div uk-dropdown="mode: click; animation: uk-animation-slide-top-small; duration: 400" class="card-dropdown">-->
+                            <!--<ul class="uk-nav uk-dropdown-nav">-->
+                                <!--<li><a href="#">Item</a></li>-->
+                                <!--<li><a href="#">Item</a></li>-->
+                                <!--<li><a href="#">Item</a></li>-->
+                                <!--<li><a href="#">Item</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<h2 class="uk-h2 uk-text-muted uk-text-bold uk-position-center uk-text-center">Click on a <span uk-icon="mail"></span> message thread to open</h2>-->
+                <div class="conversation-container uk-position-relative uk-overflow-auto uk-width-expand uk-card">
+                    <div class="conversation-body uk-margin-large-top">
+                        <div class="sent-message message-item">
+                            <div class="sent-message-inner">
+                                <div>Hello there</div>
+                                <span class="uk-text-muted">5:30am</span>
+                            </div>
+                        </div>
+                        <div class="received-message message-item">
+                            <div class="received-message-inner">
+                                <div>Hello too</div>
+                                <span class="uk-text-muted">5:33am</span>
+                            </div>
+                        </div>
+                        <div class="received-message message-item">
+                            <div class="received-message-inner">
+                                <div>Hello too</div>
+                                <span class="uk-text-muted">5:33am</span>
+                            </div>
+                        </div>
+                        <div class="sent-message message-item">
+                            <div class="sent-message-inner">
+                                <div>Hello there</div>
+                                <span class="uk-text-muted">5:30am</span>
+                            </div>
+                        </div>
+                        <div class="received-message message-item">
+                            <div class="received-message-inner">
+                                <div>Hello too</div>
+                                <span class="uk-text-muted">5:33am</span>
+                            </div>
+                        </div>
+                        <div class="received-message message-item">
+                            <div class="received-message-inner">
+                                <div>Hello too</div>
+                                <span class="uk-text-muted">5:33am</span>
+                            </div>
+                        </div>
+                        <div class="sent-message message-item">
+                            <div class="sent-message-inner">
+                                <div>Hello there</div>
+                                <span class="uk-text-muted">5:30am</span>
+                            </div>
+                        </div>
+                        <div class="received-message message-item">
+                            <div class="received-message-inner">
+                                <div>Hello too</div>
+                                <span class="uk-text-muted">5:33am</span>
+                            </div>
+                        </div>
+                        <div class="received-message message-item">
+                            <div class="received-message-inner">
+                                <div>Hello too</div>
+                                <span class="uk-text-muted">5:33am</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div uk-sticky class="uk-margin-large-top message-input">
+                        <input type="text" class="uk-input" placeholder="Type Message...">
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>

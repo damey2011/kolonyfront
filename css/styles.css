@@ -86,3 +86,70 @@ a:hover {
 .box-sizing-content {
     box-sizing: content-box;
 }
+
+.horizontal-touch-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.horizontal-touch-scroll li {
+    flex: 0 0 auto;
+}
+
+.horizontal-touch-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+.message-thread-image {
+    height: 50px;
+    width: 50px;
+}
+
+.message-thread-link:hover {
+    background-color: #8492A6;
+}
+
+.conversation-header {
+    width: 100%;
+}
+
+.conversation-body {
+    margin-top: 0 !important;
+    margin-bottom: 50px;
+}
+
+.message-item {
+    padding: 16px;
+    max-width: 100%;
+    position: relative;
+    margin: 32px 0;
+}
+
+.sent-message-inner {
+    right: 0;
+    max-width: 75%;
+    min-width: 30%;
+    background-color: rgba(132, 146, 166, 0.12);
+    width: fit-content;
+    padding: 4px 8px;
+    position: absolute;
+}
+
+.received-message-inner {
+    background-color: rgba(60, 72, 88, 0.12);
+    left: 0;
+    max-width: 75%;
+    min-width: 30%;
+    width: fit-content;
+    padding: 4px 8px;
+    position: absolute;
+}
+
+.message-input {
+    position: sticky;
+    width: 100%;
+}

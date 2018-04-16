@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Topic</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="uikit/css/uikit.min.css">
@@ -94,24 +94,22 @@
             <div class="uk-width-1-1@s uk-width-3-4@m uk-position-relative">
                 <div class="profile-actions uk-float-left">
                     <div class="user-profile-image uk-position-relative uk-border-circle uk-overflow-hidden uk-text-center uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
-                        <img src="images/user1.jpg" alt="User profile image">
+                        <img src="images/1-m3vlxneAo50hBQYOZbT_ug.jpeg" alt="User profile image">
                         <div class="uk-position-center js-upload" uk-form-custom>
                             <input type="file">
                             <a href="#"><span uk-tooltip="Change Display Picture" class="uk-transition-fade color-white" uk-icon="icon: pencil; ratio: 2"></span></a>
                         </div>
                     </div>
-                    <div class="uk-text-center uk-margin-small-top">
-                        <a href="#profile-edit-modal" uk-toggle class="uk-icon-button uk-padding-small box-sizing-content edit-profile-button" uk-icon="icon: pencil; ratio: 3"></a>
-                    </div>
-                    <div class="uk-text-center uk-margin-small-top">
-                        <a href="#" class="uk-icon-button uk-padding-small box-sizing-content message-profile-button" uk-icon="icon: mail; ratio: 1.5"></a>
-                    </div>
+                    <!--<div class="uk-text-center uk-margin-small-top">-->
+                        <!--<a href="#profile-edit-modal" uk-toggle class="uk-icon-button uk-padding-small box-sizing-content edit-profile-button" uk-icon="icon: pencil; ratio: 3"></a>-->
+                    <!--</div>-->
+                    <!--<div class="uk-text-center uk-margin-small-top">-->
+                        <!--<a href="#" class="uk-icon-button uk-padding-small box-sizing-content message-profile-button" uk-icon="icon: mail; ratio: 1.5"></a>-->
+                    <!--</div>-->
                 </div>
 
                 <div class="uk-float-left uk-padding-small">
-                    <div class="uk-h2 uk-text-bold uk-margin-remove-bottom">First Name Last</div>
-                    <span class="uk-display-block uk-h4 uk-margin-small" style="color: #999;">@username</span>
-                    <a href="#" class="uk-display-block uk-margin-small-top"><span uk-icon="link"></span> https://personal.mywebpage.com</a>
+                    <div class="uk-h2 uk-text-bold uk-margin-remove-bottom">Topic Name</div>
                     <div class="user-stats uk-margin-small-top">
                         <a href="#" uk-toggle class="stat-item uk-text-center uk-float-left uk-margin-small-right">
                             <span class="uk-h3 uk-display-block uk-margin-remove">403</span>
@@ -119,26 +117,16 @@
                         </a>
                         <a href="#followers-edit-modal" uk-toggle class="stat-item uk-text-center uk-float-left uk-margin-small-right">
                             <span class="uk-h3 uk-display-block uk-margin-remove">291</span>
-                            <span class="uk-text-meta uk-text-uppercase">followers</span>
-                        </a>
-                        <a href="#followers-edit-modal" uk-toggle class="stat-item uk-text-center uk-float-left uk-margin-small-right">
-                            <span class="uk-h3 uk-display-block uk-margin-remove">101</span>
-                            <span class="uk-text-meta uk-text-uppercase">followings</span>
+                            <span class="uk-text-meta uk-text-uppercase">readers</span>
                         </a>
                     </div>
-                    <div class="social-buttons uk-margin-small-top uk-position-bottom-right">
-                        <a href="#" class="uk-icon-button"><span uk-icon="facebook"></span></a>
-                        <a href="#" class="uk-icon-button"><span uk-icon="twitter"></span></a>
-                        <a href="#" class="uk-icon-button"><span uk-icon="instagram"></span></a>
-                    </div>
-
                     <button class="uk-button-small uk-button-default uk-position-top-right uk-margin-medium-top"> <span uk-icon="plus"></span> FOLLOW</button>
 
                 </div>
             </div>
 
             <div class="uk-width-1-1@s uk-width-1-4@m">
-                <h2 class="uk-h2 uk-heading-line uk-margin-small-top">About </h2>
+                <h2 class="uk-h2 uk-heading-line uk-margin-small-top">Description </h2>
                 <div>
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </div>
@@ -152,13 +140,8 @@
         <div uk-grid>
             <div class="uk-width-3-4@m uk-width-1-1@s">
                 <ul class="horizontal-touch-scroll" uk-tab>
-                    <li class="uk-active"><a href="#">Your Posts <span class="uk-badge">203</span></a></li>
-                    <li><a href="#">Bookmarks <span class="uk-badge">203</span></a></li>
-                    <li><a href="#">Comments <span class="uk-badge">20</span></a></li>
-                    <li><a href="#">Upvotes <span class="uk-badge">100</span></a></li>
-                    <li><a href="#">Followers <span class="uk-badge">1.5k</span></a></li>
-                    <li><a href="#">Followings <span class="uk-badge">103</span></a></li>
-                    <li><a href="#">Stats</a></li>
+                    <li class="uk-active"><a href="#">Posts <span class="uk-badge">203</span></a></li>
+                    <li><a href="#">Readers<span class="uk-badge">203</span></a></li>
                 </ul>
                 <!--End of Nav-->
                 <div class="uk-card uk-card-default card-post">
@@ -219,53 +202,6 @@
         </div>
     </div>
 </section>
-
-<!--Edit Profile Modal-->
-<div id="profile-edit-modal" class="uk-modal-full" uk-modal>
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-        <div class="uk-container">
-            <div uk-grid uk-height-viewport>
-                <div class="uk-width-1-1@s uk-width-1-4@m">
-
-                </div>
-                <div class="uk-width-1-1@s uk-width-2-4@m">
-                    <form>
-                        <fieldset class="uk-fieldset">
-
-                            <legend class="uk-legend">Edit Profile</legend>
-
-                            <div class="uk-margin">
-                                <input class="uk-input" type="text" placeholder="First Name">
-                            </div>
-                            <div class="uk-margin">
-                                <input class="uk-input" type="text" placeholder="Last Name">
-                            </div>
-
-                            <div class="uk-margin">
-                                <select class="uk-select">
-                                    <option value="">-- Sex --</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                </select>
-                            </div>
-
-                            <div class="uk-margin">
-                                <textarea class="uk-textarea" rows="4" placeholder="Bio"></textarea>
-                            </div>
-
-                            <button class="uk-button-primary uk-button-small">Update</button>
-
-                        </fieldset>
-                    </form>
-                </div>
-                <div class="uk-width-1-1@s uk-width-1-4@m">
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <!--Followers/Followings Modal-->
